@@ -1,0 +1,202 @@
+.bannerWrapper {
+  background-color: #a41a1a;
+}
+.bannerWrapper .bannerLeftBox {
+  background-image: url("/images/bw_cake.jpg");
+  background-size: cover;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 50vh;
+}
+.bannerWrapper .bannerTextBox {
+  background-color: #faf6ea;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 50px 100px 50px 100px;
+}
+.bannerWrapper .bannerTextBox .bannerText {
+  font-weight: 900;
+  line-height: 110%;
+  padding-bottom: 20px;
+}
+.bannerWrapper .bannerTextBox .bannerLine {
+  background-color: #0069ad;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+p {
+  font-size: 20px;
+  line-height: 1.75em;
+}
+
+.reg-button {
+  background-color: black;
+  border-radius: 8px;
+  border: none;
+  color: #faf6ea;
+  line-height: 1.5;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+  transition: 0.3s;
+}
+
+.reg-button:hover {
+  color: #726f68;
+}
+
+.contentWrapper {
+  background-color: #faf6ea;
+}
+.contentWrapper .contentSection {
+  background-color: #faf6ea;
+  display: flex;
+  justify-content: center;
+}
+.contentWrapper .contentSection .hr1 {
+  border: 2px solid black;
+  opacity: 1;
+  margin-left: 0;
+}
+.contentWrapper .contentSection .hr2 {
+  border: 2px solid black;
+  opacity: 1;
+  margin-right: 0;
+}
+.contentWrapper .contentSection .rollout {
+  -webkit-transition: width 1s ease-out;
+  /* For Safari 3.1 to 6.0 */
+  transition: width 1s ease-out;
+  width: 0%;
+  text-align: right;
+}
+.contentWrapper .contentSection .grow {
+  width: 100%;
+}
+.contentWrapper .contentSection .alignRight {
+  text-align: right;
+}
+.contentWrapper .contentRow {
+  margin-top: 20px;
+  align-items: center;
+}
+.contentWrapper .contentRow .contentImage {
+  max-width: 100%;
+  text-align: center;
+}
+.contentWrapper .contentRow .contentImage .sideImage {
+  max-width: 400px;
+}
+.footerClass {
+  background-color: black;
+  color: #faf6ea;
+  margin-top: 200px;
+}
+.footerClass .footerLogo {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.footerClass .footerNav {
+  padding: 100px 50px 50px 0px;
+  line-height: 2em;
+  font-size: 20px;
+}
+.footerClass .footerNav .list {
+  list-style-type: none;
+}
+.footerClass .footerNav .list a {
+  text-decoration: none;
+  color: #faf6ea;
+  transition: 0.3s;
+}
+.footerClass .footerNav .list a:hover {
+  opacity: 0.5;
+}
+.footerClass .footerContact {
+  padding: 100px 0px 50px 0px;
+}
+.footerClass .footerContact h3 {
+  font-weight: 900;
+}
+.footerClass .footerContact .socialRow {
+  width: 150px;
+  padding-top: 10px;
+}
+.footerClass .footerContact .socialRow .socialIcon {
+  width: 45px;
+  padding: 3px;
+  transition: 0.3s;
+}
+.footerClass .footerContact .socialRow .socialIcon:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 500px) {
+  .bannerText {
+    font-size: 80px;
+  }
+
+  .bannerLine {
+    width: 190px;
+    height: 30px;
+  }
+
+  .contentSection {
+    padding: 50px 50px 0px 50px;
+  }
+
+  h1 {
+    padding-top: 20px;
+  }
+
+  .rowReverse {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1050px) {
+  .bannerText {
+    font-size: 100px;
+  }
+
+  .bannerLine {
+    width: 190px;
+    height: 30px;
+  }
+
+  .contentSection {
+    padding: 50px 50px 0px 50px;
+  }
+
+  h1 {
+    padding-top: 20px;
+  }
+
+  .contentRow {
+    align-items: start;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .bannerText {
+    font-size: 175px;
+  }
+
+  .bannerLine {
+    width: 340px;
+    height: 40px;
+  }
+
+  .contentWrapper .contentSection {
+    padding: 150px 150px 0px 150px;
+  }
+}
+
+/*# sourceMappingURL=cakery_about.css.map */
