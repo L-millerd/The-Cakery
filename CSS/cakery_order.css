@@ -72,7 +72,7 @@ h4 {
   border: 2px solid black;
 }
 .contactContainer .contactImage {
-  background-image: url(/images/pattern.png);
+  background-image: url("../images/pattern.png");
   background-size: cover;
 }
 .contactContainer .contactForm {
