@@ -2,7 +2,7 @@
   background-color: #0069ad;
 }
 .bannerWrapper .bannerLeftBox {
-  background-image: url("/images/about_banner.jpg");
+  background-image: url("../images/about_banner.jpg");
   background-size: cover;
   background-position: center center;
   border-top-right-radius: 500px;
@@ -33,7 +33,6 @@
   .bannerText {
     font-size: 125px;
   }
-
   .bannerLine {
     width: 240px;
     height: 30px;
@@ -43,7 +42,6 @@
   .bannerText {
     font-size: 175px;
   }
-
   .bannerLine {
     width: 340px;
     height: 40px;
@@ -104,28 +102,22 @@ input[type=email]:focus {
   .bannerText {
     font-size: 90px;
   }
-
   .bannerLine {
     width: 190px;
     height: 30px;
   }
-
   .contentSection {
     padding: 50px 50px 0px 50px;
   }
-
   h1 {
     padding-top: 20px;
   }
-
   .rowReverse {
     flex-direction: column-reverse;
   }
-
   .contactImage {
     display: none;
   }
-
   .infoContainer {
     padding: 50px;
     max-width: 1000px;
@@ -145,24 +137,19 @@ input[type=email]:focus {
   .bannerText {
     font-size: 120px;
   }
-
   .bannerLine {
     width: 190px;
     height: 30px;
   }
-
   .contentSection {
     padding: 50px 50px 0px 50px;
   }
-
   h1 {
     padding-top: 20px;
   }
-
   .contentRow {
     align-items: start;
   }
-
   .contactImage {
     display: none;
   }
@@ -171,12 +158,10 @@ input[type=email]:focus {
   .bannerText {
     font-size: 125px;
   }
-
   .bannerLine {
     width: 250px;
     height: 40px;
   }
-
   .contentWrapper .contentSection {
     padding: 150px 150px 0px 150px;
   }
