@@ -2,28 +2,11 @@
   background-color: #eab127;
 }
 .bannerWrapper .bannerLeftBox {
-  background-image: url("../images/news_banner.jpg");
-  background-size: cover;
-  background-position: center center;
-  border-top-right-radius: 500px;
-  border-bottom-right-radius: 500px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  min-height: 50vh;
+  background-image: url("../images/fruitcake.jpg");
+  background-position: left;
 }
 .bannerWrapper .bannerTextBox {
   background-color: #faf6ea;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: end;
-  padding: 50px 100px 50px 100px;
-}
-.bannerWrapper .bannerTextBox .bannerText {
-  font-weight: 900;
-  line-height: 110%;
-  padding-bottom: 20px;
 }
 .bannerWrapper .bannerTextBox .bannerLine {
   background-color: #a41a1a;
@@ -64,6 +47,9 @@ p {
 
 .contentWrapper {
   background-color: #faf6ea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contentWrapper .contentSection {
   background-color: #faf6ea;
@@ -116,13 +102,9 @@ p {
 .contentWrapper .contentRow .contentImage .sideImage {
   max-width: 100%;
 }
-@media screen and (max-width: 500px) {
-  .bannerText {
-    font-size: 100px;
-  }
-  .bannerLine {
-    width: 190px;
-    height: 30px;
+@media screen and (max-width: 767px) {
+  .bannerTextBox {
+    display: none;
   }
   .contentSection {
     padding: 50px 50px 0px 50px;
@@ -134,7 +116,10 @@ p {
     flex-direction: column-reverse;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 1050px) {
+@media screen and (min-width: 768px) and (max-width: 1050px) {
+  .bannerTextBox {
+    display: flex;
+  }
   .bannerText {
     font-size: 100px;
   }
@@ -156,12 +141,8 @@ p {
   }
 }
 @media screen and (min-width: 1050px) {
-  .bannerText {
-    font-size: 125px;
-  }
-  .bannerLine {
-    width: 340px;
-    height: 40px;
+  .bannerTextBox {
+    display: flex;
   }
   .contentWrapper .contentSection {
     padding: 150px 150px 0px 150px;

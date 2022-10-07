@@ -19,33 +19,13 @@ $bg-color: #faf6ea;
     
     .bannerLeftBox{
         background-image: url('../images/bw_cake.jpg');
-        background-size:cover;
-        border-top-right-radius:500px;
-        border-bottom-right-radius:500px;
-        //margin:30px 0px 20px 0px;
-        margin-top:20px;
-        margin-bottom:20px;
-        min-height:50vh;
+        
+
     }
     
     .bannerTextBox{
         background-color:$bg-color;
-        text-align: right;
-        display:flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: end;
-        padding: 50px 100px 50px 100px;
-        
 
-
-
-        .bannerText{
-            font-weight: 900;
-            //font-size: 125px;
-            line-height: 110%;
-            padding-bottom:20px
-        }
 
         .bannerLine{
  
@@ -87,8 +67,9 @@ p {
 
 .contentWrapper{
     background-color: $bg-color;
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .contentSection{
         //padding: 150px 150px 0px 150px;
@@ -165,17 +146,10 @@ p {
 //////////media queries////////
 
 ///CELLPHONE
-@media screen and (max-width:500px){
-    .bannerText{
-        font-size: 80px;
+@media screen and (max-width:767px){
+    .bannerTextBox{
+        display: none;
     }
-
-    .bannerLine{
-        width:190px;
-        height:30px;
-       
-    }
-
     .contentSection{
         padding: 50px 50px 0px 50px;
     }
@@ -191,16 +165,9 @@ p {
 }
 
 ////IPAD
-@media screen and (min-width: 500px) and (max-width:1050px){
-    .bannerText{
-        font-size: 125px;
-
-    }
-
-    .bannerLine{
-        width:190px;
-        height:30px;
-       
+@media screen and (min-width: 768px) and (max-width:1050px){
+    .bannerTextBox{
+        display: flex;
     }
 
     .contentSection{
@@ -211,9 +178,7 @@ p {
         padding-top:20px
     }
 
-    .contentRow{
-      //  align-items: start;
-    }
+
     .rowReverse{
         flex-direction: column-reverse;
     }
@@ -222,6 +187,9 @@ p {
 
 /////FULL SCREEN
 @media screen and (min-width: 1050px){
+    .bannerTextBox{
+        display: flex;
+    }
 
     .bannerText{
         font-size: 125px;

@@ -16,39 +16,19 @@ $bg-color: #faf6ea;
 /////////////BANNER
 .bannerWrapper{
     background-color: $blue;
+    // max-width: 100%;
     
     .bannerLeftBox{
         background-image: url('../images/index_banner.jpg');
-        background-size:cover;
-        border-top-right-radius:500px;
-        border-bottom-right-radius:500px;
-        //margin:30px 0px 20px 0px;
-        margin-top:20px;
-        margin-bottom:20px;
-        min-height:50vh;
+        background-position: center;
+
     }
     
     .bannerTextBox{
         background-color:$bg-color;
-        text-align: right;
-        display:flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content: end;
-        padding: 50px 100px 50px 100px;
-        
 
-
-
-        .bannerText{
-            font-weight: 900;
-            //font-size: 125px;
-            line-height: 110%;
-            padding-bottom:20px
-        }
 
         .bannerLine{
- 
             background-color: $red;
 
         }
@@ -87,8 +67,10 @@ p {
 
 .contentWrapper{
     background-color: $bg-color;
-
-
+    background-color: #faf6ea;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     .contentSection{
         //padding: 150px 150px 0px 150px;
@@ -172,15 +154,10 @@ p {
 //////////media queries////////
 
 ///CELLPHONE
-@media screen and (max-width:500px){
-    .bannerText{
-        font-size: 100px;
-    }
+@media screen and (max-width:767px){
 
-    .bannerLine{
-        width:190px;
-        height:30px;
-       
+    .bannerTextBox{
+        display: none;
     }
 
     .contentSection{
@@ -198,17 +175,12 @@ p {
 }
 
 ////IPAD
-@media screen and (min-width: 500px) and (max-width:1050px){
-    .bannerText{
-        font-size: 100px;
+@media screen and (min-width: 768px) and (max-width:1050px){
 
+    .bannerTextBox{
+        display: flex;
     }
 
-    .bannerLine{
-        width:190px;
-        height:30px;
-       
-    }
 
     .contentSection{
         padding: 50px 50px 0px 50px;
@@ -223,24 +195,20 @@ p {
     }
 
 
+
 }
 
 /////FULL SCREEN
 @media screen and (min-width: 1050px){
 
-    .bannerText{
-        font-size: 125px;
-    }
-
-    .bannerLine{
-        width:250px;
-        height:40px;
-    
+    .bannerTextBox{
+        display: flex;
     }
 
     .contentWrapper{
         .contentSection{
             padding: 150px 150px 0px 150px;
+
         }
     }
 }

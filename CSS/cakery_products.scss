@@ -12,52 +12,24 @@ $yellow: #eab127;
     opacity: 1;
 }
 
-////////NAV BAR
-
-/////////////BANNER
+////////////BANNER/////////////
 .bannerWrapper{
     background-color: $yellow;
     
     .bannerLeftBox{
         background-image: url('../images/products_banner.jpg');
-        background-size:cover;
-        border-top-right-radius:500px;
-        border-bottom-right-radius:500px;
-        background-attachment: bottom center;
-        //margin:30px 0px 20px 0px;
-        margin-top:20px;
-        margin-bottom:20px;
-        min-height:50vh;
+        background-position: center;
     }
     
     .bannerTextBox{
         background-color:$bg-color;
-        text-align: right;
-        display:flex;
-        flex-direction: column;
-        align-items: end;
-        justify-content:end;
-       // padding: 50px 100px 50px 100px;
-        
-
-
-
-        .bannerText{
-            font-weight: 900;
-            //font-size: 125px;
-            line-height: 110%;
-            padding-bottom:20px
-        }
 
         .bannerLine{
- 
             background-color: $red;
-
         }
+
     }
 }
-
-
 
 //////////////CONTENT//////////////
 h1{
@@ -134,13 +106,13 @@ p {
 
         .hr2{
             @include border-style;
-            margin-right:0;  //why doesn't this work?        
+            margin-right:0;       
         }
 
 
 
         .rollout{
-            -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+            -webkit-transition: width 1s ease-out; 
             transition: width 1s  ease-out;
             width : 0%;
             text-align: right;
@@ -160,7 +132,6 @@ p {
             .productCol{
                 padding-bottom: 60px;
                 .imgClass{
-                    //max-width: 205px;
                     max-width: 100%;
                 }
                 .name{
@@ -198,31 +169,17 @@ p {
 }
 
 ///CELLPHONE
-@media screen  and (max-width:500px){
+@media screen  and (max-width:767px){
     
     .bannerTextBox{
-
-        padding: 50px 70px 50px 70px;
+        display: none;
     }
 
-    .bannerText{
-        font-size: 75px;
-        text-align: right;
-    }
-
-    .bannerLine{
-        width:240px;
-        height:30px;
-       
-    }
 
     .contentSection{
         padding: 50px 50px 0px 50px;
     }
 
-    h1{
-        padding-top:20px
-    }
 
     .rowReverse{
         flex-direction: column-reverse;
@@ -231,21 +188,9 @@ p {
 }
 
 ////IPAD
-@media screen and (min-width: 500px) and (max-width:1050px){
+@media screen and (min-width: 768px) and (max-width:1050px){
     .bannerTextBox{
-
-        padding: 50px 175px 50px 120px;
-    }
-    
-    .bannerText{
-        font-size: 125px;
-
-    }
-
-    .bannerLine{
-        width:240px;
-        height:30px;
-       
+        display: flex;
     }
 
     .contentSection{
@@ -265,19 +210,9 @@ p {
 
 /////FULL SCREEN
 @media screen and (min-width: 1050px){
+
     .bannerTextBox{
-
-        padding: 50px 100px 50px 100px;
-    }
-
-    .bannerText{
-        font-size: 125px;
-    }
-
-    .bannerLine{
-        width:340px;
-        height:40px;
-    
+        display: flex;
     }
 
     .contentWrapper{

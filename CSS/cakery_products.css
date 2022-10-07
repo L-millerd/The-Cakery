@@ -3,26 +3,10 @@
 }
 .bannerWrapper .bannerLeftBox {
   background-image: url("../images/products_banner.jpg");
-  background-size: cover;
-  border-top-right-radius: 500px;
-  border-bottom-right-radius: 500px;
-  background-attachment: bottom center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  min-height: 50vh;
+  background-position: center;
 }
 .bannerWrapper .bannerTextBox {
   background-color: #faf6ea;
-  text-align: right;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: end;
-}
-.bannerWrapper .bannerTextBox .bannerText {
-  font-weight: 900;
-  line-height: 110%;
-  padding-bottom: 20px;
 }
 .bannerWrapper .bannerTextBox .bannerLine {
   background-color: #a41a1a;
@@ -99,7 +83,7 @@ p {
   margin-right: 0;
 }
 .contentWrapper .contentSection .rollout {
-  -webkit-transition: width 1s ease-out; /* For Safari 3.1 to 6.0 */
+  -webkit-transition: width 1s ease-out;
   transition: width 1s ease-out;
   width: 0%;
   text-align: right;
@@ -136,38 +120,20 @@ p {
 .contentWrapper .contentRow .contentImage .sideImage {
   max-width: 100%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 767px) {
   .bannerTextBox {
-    padding: 50px 70px 50px 70px;
-  }
-  .bannerText {
-    font-size: 75px;
-    text-align: right;
-  }
-  .bannerLine {
-    width: 240px;
-    height: 30px;
+    display: none;
   }
   .contentSection {
     padding: 50px 50px 0px 50px;
-  }
-  h1 {
-    padding-top: 20px;
   }
   .rowReverse {
     flex-direction: column-reverse;
   }
 }
-@media screen and (min-width: 500px) and (max-width: 1050px) {
+@media screen and (min-width: 768px) and (max-width: 1050px) {
   .bannerTextBox {
-    padding: 50px 175px 50px 120px;
-  }
-  .bannerText {
-    font-size: 125px;
-  }
-  .bannerLine {
-    width: 240px;
-    height: 30px;
+    display: flex;
   }
   .contentSection {
     padding: 50px 50px 0px 50px;
@@ -181,14 +147,7 @@ p {
 }
 @media screen and (min-width: 1050px) {
   .bannerTextBox {
-    padding: 50px 100px 50px 100px;
-  }
-  .bannerText {
-    font-size: 125px;
-  }
-  .bannerLine {
-    width: 340px;
-    height: 40px;
+    display: flex;
   }
   .contentWrapper .contentSection {
     padding: 150px 150px 0px 150px;

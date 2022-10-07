@@ -36,6 +36,39 @@ html, body{
 }
 
 
+////////////BANNER/////////////
+.bannerWrapper{
+
+    .bannerLeftBox{
+        background-size:cover;
+        border-top-right-radius:500px;
+        border-bottom-right-radius:500px;
+        margin-top:20px;
+        margin-bottom:20px;
+        min-height:50vh;
+        // background-position: center;
+    }
+    
+    .bannerTextBox{
+        flex-direction: column;
+        justify-content:end;
+        padding: 50px 100px 50px 100px;
+        
+        .bannerText{
+            font-weight: 900;
+            line-height: 110%;
+            padding-bottom:20px;
+
+            font-size: calc(15px + 6.5vw);
+
+        }
+
+        .bannerLine{
+            width: calc(100px + 10vw);
+            height: calc(25px + 1vw);
+        }
+    }
+}
 
 
 //////////////CONTENT//////////////
@@ -80,22 +113,23 @@ hr{
     background-color: black;
     color: $bg-color;
     margin-top: 200px;
+    max-width: 100.6%;
+    display: flex;
+    align-items: center;
+
     .footerLogo{
         display:flex;
         justify-content: center;
-        padding: 60px;
        // max-width: 50px;
 
         .logo{
-            max-width: 75%;
-            padding: 10px;
+            max-width: 50%;
             object-fit: contain;
         }
        
     }
 
     .footerNav{
-        padding: 100px 50px 50px 0px;
         line-height: 1.75em;
         font-size: 20px;
 
@@ -115,8 +149,6 @@ hr{
     }
 
     .footerContact{
-        padding: 100px 0px 50px 0px;
-
 
         h3{
             font-weight:900;
@@ -141,8 +173,7 @@ hr{
 
     .footerImage{
         img{
-            object-fit: fill;
-            width:100%;
+            object-fit: contain;
         }
     }
 
@@ -151,12 +182,10 @@ hr{
         .footerImage{
             display:none;
 
-
         }
         .footerLogo{
             .logo{
                 max-width: 90%;
-    
             }
         }
  
